@@ -6,7 +6,7 @@ Turning pixels into virtual points for multimodal 3D object detection.
 
 > [**Multimodal Virtual Point 3D Detection**](https://tianweiy.github.io/mvp/),            
 > Tianwei Yin, Xingyi Zhou, Philipp Kr&auml;henb&uuml;hl,        
-> *arXiv technical report ([arXiv ](https://arxiv.org/abs/))*  
+> *arXiv technical report ([arXiv 2111.06881 ](https://arxiv.org/abs/2111.06881))*  
 
 
 
