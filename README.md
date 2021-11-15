@@ -139,7 +139,7 @@ For testing with one gpu and see the inference time,
 ```bash
 python ./tools/dist_test.py CONFIG_PATH --work_dir work_dirs/CONFIG_NAME --checkpoint work_dirs/CONFIG_NAME/latest.pth --speed_test 
 ```
-### MODEL ZOO 
+## MODEL ZOO 
 
 We experiment with VoxelNet and PointPillars architectures on nuScenes.
 
