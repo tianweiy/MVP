@@ -48,7 +48,7 @@ Lidar-based sensing drives current autonomous vehicles. Despite rapid progress, 
 ### Installation
 
 Please install [CenterPoint](https://github.com/tianweiy/CenterPoint/blob/master/docs/INSTALL.md) and [CenterNet2](https://github.com/xingyizhou/CenterNet2). 
-Make sure to add a link to [CenterNet2](https://github.com/xingyizhou/CenterNet2/tree/master/projects/CenterNet2) in your python path.
+Make sure to add a link to [CenterNet2](https://github.com/xingyizhou/CenterNet2/tree/master/projects/CenterNet2) folder in your python path.
 We will use CenterNet2 for 2D instance segmentation and CenterPoint for 3D detection. 
 
 ### Getting Started
