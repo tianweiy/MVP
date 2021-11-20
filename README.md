@@ -78,7 +78,7 @@ Download the centernet2 model from [here](https://drive.google.com/file/d/1k-uPZ
 Use the following command in the current directory to generate virtual points for nuscenes training and validation sets. The points will be saved to ```data/nuScenes/samples or sweeps/LIDAR_TOP_VIRTUAL```. 
 
 ```bash
-python virtual_gen.py --info_path data/nuScenes/infos_train_10sweeps_withvelo_filter_True.pkl  
+python virtual_gen.py --info_path data/nuScenes/infos_train_10sweeps_withvelo_filter_True.pkl  MODEL.WEIGHTS centernet2_checkpoint.pth 
 ```
 
 You will need about 80GB space and the whole process will take 10 to 20 hours using a single GPU. You can also download the precomputed virtual points from [here](https://drive.google.com/file/d/1ntCs6xajR7bT6cgd-fQCuKkoVOIx2oju/view?usp=sharing).
