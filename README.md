@@ -73,7 +73,9 @@ Remember to change the DATA_ROOT to the actual path in your system.
 
 #### Generate Virtual Points 
 
-Download the centernet2 model from [here](https://drive.google.com/file/d/1k-uPZJq5mVl9Y5z88fyurxxIoLmuVfZ7/view?usp=sharing) and place it in the root directory.
+You can **download** the precomputed virtual points from [here](https://drive.google.com/file/d/1ntCs6xajR7bT6cgd-fQCuKkoVOIx2oju/view?usp=sharing).
+
+If you prefer to generating the virtual points yourself. Download the centernet2 model from [here](https://drive.google.com/file/d/1k-uPZJq5mVl9Y5z88fyurxxIoLmuVfZ7/view?usp=sharing) and place it in the root directory.
 
 Use the following command in the current directory to generate virtual points for nuscenes training and validation sets. The points will be saved to ```data/nuScenes/samples or sweeps/LIDAR_TOP_VIRTUAL```. 
 
@@ -81,7 +83,7 @@ Use the following command in the current directory to generate virtual points fo
 python virtual_gen.py --info_path data/nuScenes/infos_train_10sweeps_withvelo_filter_True.pkl  MODEL.WEIGHTS centernet2_checkpoint.pth 
 ```
 
-You will need about 80GB space and the whole process will take 10 to 20 hours using a single GPU. You can also download the precomputed virtual points from [here](https://drive.google.com/file/d/1ntCs6xajR7bT6cgd-fQCuKkoVOIx2oju/view?usp=sharing).
+You will need about 80GB space and the whole process will take 10 to 20 hours using a single GPU.
 
 #### Create Data
 
