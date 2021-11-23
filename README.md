@@ -35,7 +35,7 @@ Lidar-based sensing drives current autonomous vehicles. Despite rapid progress, 
 |CenterPoint-Voxel |  59.5   | 66.7 |    
 |CenterPoint-Voxel + MVP | **66.0** | **69.9** | 
 |CenterPoint-Pillar |  52.4   | 61.5 |    
-|CenterPoint-Voxel + MVP | **62.8** | **66.2** | 
+|CenterPoint-Pillar + MVP | **62.8** | **66.2** | 
 
 #### 3D detection on nuScenes test set 
 
