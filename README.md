@@ -94,6 +94,8 @@ Go to the CenterPoint's root directory and run
 python tools/create_data.py nuscenes_data_prep --root_path=NUSCENES_TRAINVAL_DATASET_ROOT --version="v1.0-trainval" --nsweeps=10 --virtual True 
 ```
 
+To save time and space, before running the above command, you can also remove lines below https://github.com/tianweiy/CenterPoint/blob/952f14b694970cb667d8e3fa00ab5ae0936fa164/tools/create_data.py#L13 to avoid generating gt database. After that, remember to set https://github.com/tianweiy/CenterPoint/blob/952f14b694970cb667d8e3fa00ab5ae0936fa164/configs/mvp/nusc_centerpoint_pp_fix_bn_z_scale_virtual.py#L135 to None. The improvements of gt sampling on nuscenes is marginal (<0.5nds). 
+
 if you want to reproduce CenterPoint baseline's results, then also run the following command
 
 ```
