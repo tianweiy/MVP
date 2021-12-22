@@ -157,8 +157,6 @@ We experiment with VoxelNet and PointPillars architectures on nuScenes.
 | [centerpoint_baseline](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_pp_fix_bn_z_scale.py) | 52.4   | 61.5 | [URL](https://drive.google.com/drive/folders/1_Eu1oArVHZ9EgKhNPn1oAJXhR2gE9ZuB?usp=sharing)  |
 | [Ours](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_pp_fix_bn_z_scale_virtual.py) |**62.8** | **66.2** |   [URL](https://drive.google.com/drive/folders/1oXz9o8f3mj0VFQl_vSXjoPoSR-cXRRBU?usp=sharing)  |
 
-Test set models and predictions will be updated soon. 
-
 ## License
 
 MIT License.
