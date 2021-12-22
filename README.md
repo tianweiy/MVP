@@ -35,7 +35,7 @@ Lidar-based sensing drives current autonomous vehicles. Despite rapid progress, 
 |CenterPoint-Voxel |  59.5   | 66.7 |    
 |CenterPoint-Voxel + MVP | **66.0** | **69.9** | 
 |CenterPoint-Pillar |  52.4   | 61.5 |    
-|CenterPoint-Voxel + MVP | **62.8** | **66.2** | 
+|CenterPoint-Pillar + MVP | **62.8** | **66.2** | 
 
 #### 3D detection on nuScenes test set 
 
@@ -48,7 +48,7 @@ Lidar-based sensing drives current autonomous vehicles. Despite rapid progress, 
 ### Installation
 
 Please install [CenterPoint](https://github.com/tianweiy/CenterPoint/blob/master/docs/INSTALL.md) and [CenterNet2](https://github.com/xingyizhou/CenterNet2). 
-Make sure to add a link to [CenterNet2](https://github.com/xingyizhou/CenterNet2/tree/master/projects/CenterNet2) in your python path.
+Make sure to add a link to [CenterNet2](https://github.com/xingyizhou/CenterNet2/tree/master/projects/CenterNet2) folder in your python path.
 We will use CenterNet2 for 2D instance segmentation and CenterPoint for 3D detection. 
 
 ### Getting Started
@@ -73,15 +73,17 @@ Remember to change the DATA_ROOT to the actual path in your system.
 
 #### Generate Virtual Points 
 
-Download the centernet2 model from [here](https://drive.google.com/file/d/1k-uPZJq5mVl9Y5z88fyurxxIoLmuVfZ7/view?usp=sharing) and place it in the root directory.
+You can **download** the precomputed virtual points from [here](https://drive.google.com/file/d/1ntCs6xajR7bT6cgd-fQCuKkoVOIx2oju/view?usp=sharing).
+
+If you prefer to generating the virtual points yourself. Download the centernet2 model from [here](https://drive.google.com/file/d/1k-uPZJq5mVl9Y5z88fyurxxIoLmuVfZ7/view?usp=sharing) and place it in the root directory.
 
 Use the following command in the current directory to generate virtual points for nuscenes training and validation sets. The points will be saved to ```data/nuScenes/samples or sweeps/LIDAR_TOP_VIRTUAL```. 
 
 ```bash
-python virtual_gen.py --info_path data/nuScenes/infos_train_10sweeps_withvelo_filter_True.pkl  
+python virtual_gen.py --info_path data/nuScenes/infos_train_10sweeps_withvelo_filter_True.pkl  MODEL.WEIGHTS centernet2_checkpoint.pth 
 ```
 
-You will need about 80GB space and the whole process will take 10 to 20 hours using a single GPU. You can also download the precomputed virtual points from [here](https://drive.google.com/file/d/1ntCs6xajR7bT6cgd-fQCuKkoVOIx2oju/view?usp=sharing).
+You will need about 80GB space and the whole process will take 10 to 20 hours using a single GPU.
 
 #### Create Data
 
