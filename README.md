@@ -151,7 +151,7 @@ We experiment with VoxelNet and PointPillars architectures on nuScenes.
 | Model                 | Validation MAP  | Validation NDS  | Link          |
 |-----------------------|-----------------|-----------------|---------------|
 | [centerpoint_baseline](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale.py) |59.5   | 66.7 | [URL](https://drive.google.com/drive/folders/1abNTNfhbkoPMT-cvNIoDfuveB-2v7oNs?usp=sharing)  |
-| [Ours](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale_virtual.py) |**66.0** | **69.9** |  [URL](https://drive.google.com/drive/folders/1HjFv3BZASQk9NscPJku9PBipW610MZ4j?usp=sharing) |  
+| [Ours](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale_virtual.py) |66.0 | 69.9 |  [URL](https://drive.google.com/drive/folders/1HjFv3BZASQk9NscPJku9PBipW610MZ4j?usp=sharing) |  
 | [Ours + Two Stage](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_two_stage_base_with_virtual.py) |**67.0** | **70.7** |  [URL](https://drive.google.com/drive/folders/1ecJPj9lzZiwzpVVPDUYHjB6vbUk6dRrO?usp=sharing) |  
 
 
