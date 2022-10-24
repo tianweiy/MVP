@@ -73,9 +73,9 @@ Remember to change the DATA_ROOT to the actual path in your system.
 
 #### Generate Virtual Points 
 
-You can **download** the precomputed virtual points from [here](https://drive.google.com/file/d/1ntCs6xajR7bT6cgd-fQCuKkoVOIx2oju/view?usp=sharing).
+You can **download** the precomputed virtual points from [here](https://mitprod-my.sharepoint.com/:u:/g/personal/tianweiy_mit_edu/EYt1N6ujcV9KtxQ5deKWgtEBgp7zkRPQIlXSC5mPd-yXhQ?e=FKBMCq).
 
-If you prefer to generating the virtual points yourself. Download the centernet2 model from [here](https://drive.google.com/file/d/1k-uPZJq5mVl9Y5z88fyurxxIoLmuVfZ7/view?usp=sharing) and place it in the root directory.
+If you prefer to generating the virtual points yourself. Download the centernet2 model from [here](https://mitprod-my.sharepoint.com/:u:/g/personal/tianweiy_mit_edu/EdeUaHCqmVNOmiJdeZGCHiEBHfjv_JGYaMmA546ZkbrjAQ?e=PUaiZ7) and place it in the root directory.
 
 Use the following command in the current directory to generate virtual points for nuscenes training and validation sets. The points will be saved to ```data/nuScenes/samples or sweeps/LIDAR_TOP_VIRTUAL```. 
 
@@ -150,16 +150,16 @@ We experiment with VoxelNet and PointPillars architectures on nuScenes.
 ### VoxelNet 
 | Model                 | Validation MAP  | Validation NDS  | Link          |
 |-----------------------|-----------------|-----------------|---------------|
-| [centerpoint_baseline](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale.py) |59.5   | 66.7 | [URL](https://drive.google.com/drive/folders/1abNTNfhbkoPMT-cvNIoDfuveB-2v7oNs?usp=sharing)  |
-| [Ours](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale_virtual.py) |66.0 | 69.9 |  [URL](https://drive.google.com/drive/folders/1HjFv3BZASQk9NscPJku9PBipW610MZ4j?usp=sharing) |  
-| [Ours + Two Stage](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_two_stage_base_with_virtual.py) |**67.0** | **70.7** |  [URL](https://drive.google.com/drive/folders/1ecJPj9lzZiwzpVVPDUYHjB6vbUk6dRrO?usp=sharing) |  
+| [centerpoint_baseline](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale.py) |59.5   | 66.7 | [URL](https://mitprod-my.sharepoint.com/:f:/g/personal/tianweiy_mit_edu/EhgzjwV2EghOnHFKyRgSadoBr2kUo7yPu52N-I3dG3c5dA?e=ae5a1e)  |
+| [Ours](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_voxelnet_0075voxel_fix_bn_z_scale_virtual.py) |66.0 | 69.9 |  [URL](https://mitprod-my.sharepoint.com/:f:/g/personal/tianweiy_mit_edu/ErSYKmsLaItNqy6ly2gtOyABFLRmn3XccqzoL2ddHRizSA?e=pNkNZa) |  
+| [Ours + Two Stage](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_two_stage_base_with_virtual.py) |**67.0** | **70.7** |  [URL](https://mitprod-my.sharepoint.com/:f:/g/personal/tianweiy_mit_edu/EoyXnAHW4n9OlObK9SAkSbkBJsgLXP_zelWLQD-JRASmmw?e=ZNnWwU) |  
 
 
 ### PointPillars
 | Model                 | Validation MAP  | Validation NDS  | Link          |
 |-----------------------|-----------------|-----------------|---------------|
-| [centerpoint_baseline](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_pp_fix_bn_z_scale.py) | 52.4   | 61.5 | [URL](https://drive.google.com/drive/folders/1_Eu1oArVHZ9EgKhNPn1oAJXhR2gE9ZuB?usp=sharing)  |
-| [Ours](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_pp_fix_bn_z_scale_virtual.py) |**62.8** | **66.2** |   [URL](https://drive.google.com/drive/folders/1oXz9o8f3mj0VFQl_vSXjoPoSR-cXRRBU?usp=sharing)  |
+| [centerpoint_baseline](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_pp_fix_bn_z_scale.py) | 52.4   | 61.5 | [URL](https://mitprod-my.sharepoint.com/:f:/g/personal/tianweiy_mit_edu/EqMWE0QZxspEpNtcZ2FCk-4B9lJibT0zReUDxeQmHoDdvQ?e=3Vcv8O)  |
+| [Ours](https://github.com/tianweiy/CenterPoint/blob/master/configs/mvp/nusc_centerpoint_pp_fix_bn_z_scale_virtual.py) |**62.8** | **66.2** |   [URL](https://mitprod-my.sharepoint.com/:f:/g/personal/tianweiy_mit_edu/Em_Pqj_NECdKio1SvBWoVcwBisSwerqPnqhGZJzUgmoYZQ?e=AIRvJh)  |
 
 ## License
 
